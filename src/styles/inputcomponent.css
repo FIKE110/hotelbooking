@@ -1,0 +1,61 @@
+.inputcomponent-container {
+    background-color: transparent;
+    width:75%;
+    margin-bottom: 2px;
+}
+
+.inputcomponent-container p{
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0%;
+    padding-bottom: 3px;
+    margin:4px;
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.input-container{
+    background:linear-gradient(to right,rgb(190, 189, 189), rgb(180, 175, 175));
+    width:100%;
+    height: auto;
+    padding: 15px 0px;
+    border-radius: 15px;
+    text-align: left;
+    display: flex;
+}
+
+.input-container input{
+    background:linear-gradient(to right,rgba(190, 189, 189, 0.925), rgba(180, 175, 175, 0.74));
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+.formatted-input{
+    border: none;
+    outline: none;
+    margin: 0px;
+    padding-left: 30px;
+    font-size: 18px;
+    color:white;
+}
+
+.input-container input::placeholder{
+    color:white;
+    opacity: 1;
+}
+
+button{
+    background-color: black;
+    color:white;
+    transition: background-color 250ms linear;
+}
+
+button:hover{
+    background-color: transparent;
+    color: white;
+    border:3px black solid
+}

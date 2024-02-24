@@ -1,0 +1,20 @@
+#greeting-container{
+    display: flex;
+}
+
+#options-button-container{
+    background-color: #5D71C7;
+    width:50px;
+    height:20px
+}
+
+#options-button-container h2{
+    background-color: black;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#main-container{
+    float: right;
+}
