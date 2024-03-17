@@ -15,7 +15,13 @@ import supportIcon from "../assets/icons8-customer-support-100.png"
 const AccountMainPage = () => {
   return (
     <div id="accountpage">
-        <div id='header-panel'>
+     
+        <div id='header-panel'> 
+        <div style={{display:"inline-block"}}>
+          <h1 style={{
+            color:'white'
+          }}>SereneStay</h1>
+        </div>
           <ProfileHeading />
         </div>
         <div id="nav-tab">
@@ -30,7 +36,7 @@ const AccountMainPage = () => {
             <FeatureBox feature='Customer Support' imagepath={supportIcon}/>
           </div>
           <h1>Top Recommendations</h1>
-          <RecommendedBox />
+          <RecommendedBox src={image} />
           <h1>Available & Affordable</h1>
           <RecommendedBox />
           <h1>Vip Rooms</h1>

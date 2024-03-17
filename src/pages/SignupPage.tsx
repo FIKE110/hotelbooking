@@ -4,7 +4,11 @@ import InputComponent from '../comonents/InputComponent'
 import LoginButton from '../comonents/LoginButton'
 import { useState } from "react"
 import Axios from "axios"
+import { useNavigate } from "react-router-dom"
 
+
+const SignupPage = () => {
+    const navigate=useNavigate()
 const Signup=(formData:{username:string,password:string,email:string})=>{
     Axios.post("http://localhost:3000/auth/signup",formData)
     .then(res=>{
@@ -23,14 +27,16 @@ const Signup=(formData:{username:string,password:string,email:string})=>{
 const Login=(formData:{username:string,password:string})=>{
     Axios.post("http://localhost:3000/auth/login",formData)
     .then(res=>res.data)
-    .then(data=>console.log(data))
+    .then(data=>verifyData(data))
     .catch(err=>console.log(err))
 }
 
+function verifyData(data){
+    if(data.token){
+        navigate("/dashboard")
+    }
+}
 
-
-
-const SignupPage = () => {
     const [username,setUsername]=useState("")
     const [password,setPassword]=useState("")
     const [email,setEmail]=useState("")

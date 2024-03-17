@@ -5,7 +5,7 @@ import OptionsButton from './OptionsButton'
 
 const ProfileHeading = () => {
   return (
-    <div id="main-container">
+    <div id="main-container" style={{display:'inline-block'}}>
          <div style={{display:"flex",paddingRight:20}}>
             <PersonIcon />
             <OptionsButton />

@@ -5,8 +5,9 @@
 }
 
 #header-panel{
-    width:100%;
+    width:98%;
     height:75px;
+    padding: 1%;
     background-color:#5D71C7;
 }
 
