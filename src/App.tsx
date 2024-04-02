@@ -20,6 +20,7 @@ function App() {
       <Route path="/dashboard/search" Component={SearchPage} />
       <Route path="/booking" Component={HotelBooking} />
       <Route path="/dashboard/notifications" Component={NotificationPage} />
+      <Route path="/customer-care" Component={NotificationPage} />
    </Routes>
    </BrowserRouter>
   )

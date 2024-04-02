@@ -21,6 +21,17 @@
     background-color: #5D71C7;
 }
 
+.sections ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 25px;
+}
+
+.sections ul li{
+    list-style: none;
+    padding: 20px;
+}
+
 .sections p{
     color: white;
     font-family: "Poppins", sans-serif;
