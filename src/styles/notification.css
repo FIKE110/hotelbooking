@@ -1,0 +1,29 @@
+#notification-box-container .notification-box img{
+    width:60px;
+    border-radius: 50%;
+    height:60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#notification-box-container{
+    padding:0px 30px;
+}
+
+.notification-box > div{
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+.notification-box div div{
+    text-align: left;
+    width:100%;
+    color: white;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

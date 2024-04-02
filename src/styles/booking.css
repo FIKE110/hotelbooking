@@ -1,0 +1,53 @@
+#hotelbooking-page #main-container{
+    background-color:white;
+}
+
+#hotelbooking-page #head-container {
+    margin: auto;
+    background-color:  white;
+    width:95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections{
+    border-radius: 30px;
+    width:88%;
+    margin: 20px auto;
+    color: white;
+    padding: 24px 50px;
+    background-color: #5D71C7;
+}
+
+.sections p{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: auto;
+    padding: 10px 40px;
+}
+
+.review{
+    background-color: #5D71C7;
+    color:white;
+    border-radius: 20px;
+    padding: 20px;
+    width:94%;
+    margin:20px auto;
+}
+
+.review p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
