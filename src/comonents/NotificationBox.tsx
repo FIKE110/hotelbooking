@@ -9,8 +9,9 @@ const NotificationBox = ({message}:{message?:string}) => {
     <div className='notification-box'>
         <div style={{backgroundColor:'#5D71C7'}}>
             <img src={ReactImage}/>
-            <div>
-                <p className='poppins-bold'>{message ? message : "Thank you for signinig fortune"}</p>
+            <div style={{paddingLeft:80,display:'flex',justifyContent:'left'}}>
+                <p style={{textAlign:'left'}} 
+                className='poppins-bold'>{message ? message : "Thank you for signinig fortune"}</p>
             </div>
             <div>
                 <button>?</button>

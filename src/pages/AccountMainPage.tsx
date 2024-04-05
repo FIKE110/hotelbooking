@@ -35,7 +35,7 @@ const AccountMainPage = () => {
             <FeatureBox feature="Reviews and Ratings" imagepath={reviewIcon}/>
             <Linker path='notifications'><FeatureBox feature="Notifications" imagepath={notificationIcon}/></Linker>
             <FeatureBox feature="Settings" imagepath={settingIcon}/>
-            <FeatureBox feature='Customer Support' imagepath={supportIcon}/>
+            <Linker path='/customercare'><FeatureBox feature='Customer Support' imagepath={supportIcon}/></Linker>
           </div>
           <h1>Top Recommendations</h1>
           <RecommendedBox />

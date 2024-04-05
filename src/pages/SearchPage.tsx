@@ -2,6 +2,9 @@ import React from 'react'
 import "../styles/search.css"
 import SearchImage from '../assets/icons8-search-100.png'
 import ProfileHeading from '../comonents/ProfileHeading'
+import hotelTest from '../test/hotelTest'
+import SearchComponent from '../comonents/SearchComponent'
+
 
 const SearchPage = () => {
   return (
@@ -19,6 +22,9 @@ const SearchPage = () => {
             <div id='search-button'>
                 <img src={SearchImage} />
             </div>
+        </div>
+        <div>
+          <SearchComponent />
         </div>
     </div>
   )

@@ -114,6 +114,12 @@ const HotelBooking = () => {
     </div>
   </div>
 </div>
+    <div style={{flexDirection:'column',
+    display:'flex',justifyContent:'center',alignItems:'center'}}>
+         <h2>Contact info</h2>
+         <p>Email : hotel@gmail.com</p>
+         <p>Twitter : @hotel</p>
+    </div>
     </div>
   )
 }

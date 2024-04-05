@@ -1,0 +1,114 @@
+/* App.css */
+
+.App {
+    text-align: center;
+    color: white; /* Set text color to white */
+  }
+  
+  .App-header {
+    background-color: #5d71c7; /* Set header background color */
+    padding: 20px;
+  }
+  
+  .contact-form {
+    margin: 20px auto;
+    padding: 20px 20px;
+    max-width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Set form background color to white */
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    color: #5d71c7; /* Set form heading color */
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #5d71c7; /* Set button background color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #465898; /* Darken button color on hover */
+  }
+  
+  .tickets {
+    margin: 20px auto;
+    max-width: 600px;
+    color: #5d71c7; /* Set ticket text color */
+  }
+  
+  .tickets h2 {
+    margin-bottom: 20px;
+  }
+  
+  .tickets ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .tickets li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white; /* Set ticket background color to white */
+  }
+  
+  .contact-info {
+    margin: 20px auto;
+    max-width: 600px;
+    color: #5d71c7; /* Set text color */
+  }
+  
+  .contact-info h2 {
+    margin-bottom: 20px;
+    color: #5d71c7; /* Set heading color */
+  }
+  
+  .contact-info p {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info ul {
+    padding: 0;
+    margin-left: 20px; /* Indent lists */
+  }
+  
+  .contact-info ul li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info ul li ul {
+    padding: 0;
+    margin-left: 20px; /* Indent nested lists */
+  }
+  
+  .contact-info ul li ul li {
+    list-style: none; /* Remove bullet points */
+  }
+  
+
+  .contact-info a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
