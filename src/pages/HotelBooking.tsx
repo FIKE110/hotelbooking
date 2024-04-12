@@ -4,6 +4,31 @@ import HotelImage from '../assets/pexels-pixabay-210604.jpg'
 import '../styles/booking.css'
 import RecommendedBox from '../comonents/RecommendedBox'
 import { Rating } from '@mui/material'
+import { Perks } from '../comonents/Perks'
+import Review from '../comonents/Review'
+
+const hotelPerks = [
+  "Complimentary Breakfast",
+  "Free Wifi",
+  "Airport Shuttle",
+  "Concierge Service",
+  "Fitness Center",
+  "Swimming Pool",
+  "Spa Services",
+  "Room Upgrades",
+  "Late Checkout",
+  "Welcome Amenities",
+  "Business Center",
+  "Pet Friendly",
+  "OnSite Dining",
+  "Valet Parking",
+  "Laundry Service",
+  "Childcare Services",
+  "Tour Assistance",
+  "Special Events",
+  "InRoom Amenities",
+  "Loyalty Programs"
+];
 
 const HotelBooking = () => {
   return (
@@ -19,7 +44,7 @@ const HotelBooking = () => {
         <div id="main-container" style={{width:'100%'}}>
             <div id="head-container">
                 <img style={
-                    {width:350,height:'auto',
+                    {width:400,height:'auto',
                   borderRadius:50,padding:30
                 }}
                      src={HotelImage} />
@@ -52,67 +77,20 @@ const HotelBooking = () => {
 <h2>Hotel perks</h2>
 <div className='sections'>
 <ul>
-  <li>Complimentary breakfast</li>
-  <li>Free Wi-Fi</li>
-  <li>Airport shuttle service</li>
-  <li>Concierge service</li>
-  <li>Fitness center</li>
-  <li>Swimming pool</li>
-  <li>Spa services</li>
-  <li>Room upgrades</li>
-  <li>Late checkout</li>
-  <li>Welcome amenities</li>
-  <li>Business center</li>
-  <li>Pet-friendly amenities</li>
-  <li>On-site dining options</li>
-  <li>Valet parking</li>
-  <li>Laundry service</li>
-  <li>Childcare services</li>
-  <li>Tour assistance</li>
-  <li>Special events and activities</li>
-  <li>In-room amenities</li>
-  <li>Loyalty programs</li>
+  {hotelPerks.map((item)=>(
+    <div className='perks-container'>
+      <img src={Perks.get(item)}/>
+      <li>{item}</li>
+    </div>
+  ))}
 </ul>
 
 </div>
 
         <div>
   <h2>Guest Reviews</h2>
-  <div className="review">
-    <div className="reviewer-info">
-      <img src="profile-pic.jpg" alt="Profile Picture" />
-      <p className="reviewer-name">John Doe</p>
-    </div>
-    <div className="review-content">
-    <Rating name='hotelhalf' defaultValue={4} precision={0.5} readOnly/>
-      <p className="comment">"Absolutely breathtaking! From the moment we arrived, we were blown away by the stunning ocean views and impeccable service. The room was spacious and luxurious, the food was divine, and the spa treatments were incredibly relaxing. A truly unforgettable experience."</p>
-      <p className="date">Posted on January 15, 2024</p>
-    </div>
-  </div>
-
-  <div className="review">
-    <div className="reviewer-info">
-      <img src="profile-pic.jpg" alt="Profile Picture" />
-      <p className="reviewer-name">Jane Smith</p>
-    </div>
-    <div className="review-content">
-      <p className="rating">★★★★☆</p>
-      <p className="comment">"Overall, a wonderful stay at Oceanview Resort. The staff were friendly and attentive, the amenities were top-notch, and the location was unbeatable. However, we did encounter a minor issue with the air conditioning in our room, but it was quickly resolved by the maintenance team."</p>
-      <p className="date">Posted on February 5, 2024</p>
-    </div>
-  </div>
-
-  <div className="review">
-    <div className="reviewer-info">
-      <img src="profile-pic.jpg" alt="Profile Picture" />
-      <p className="reviewer-name">Emily Johnson</p>
-    </div>
-    <div className="review-content">
-      <p className="rating">★★★☆☆</p>
-      <p className="comment">"Had a pleasant stay at Oceanview Resort, but felt that the room could have been cleaner upon arrival. The beachfront location was beautiful, but it was a bit crowded during peak hours. Overall, a decent experience, but there's room for improvement."</p>
-      <p className="date">Posted on March 10, 2024</p>
-    </div>
-  </div>
+  <Review />
+  <Review />
 </div>
     <div style={{flexDirection:'column',
     display:'flex',justifyContent:'center',alignItems:'center'}}>

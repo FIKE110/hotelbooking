@@ -31,7 +31,7 @@ const AccountMainPage = () => {
           <p>All systems are running smoothly</p>
           <div id="box-container" className='container-card'>
             <Linker path="search"><FeatureBox feature='Search and Filters' imagepath={searchIcon}/></Linker>
-            <Linker path="/booking"><FeatureBox feature='Booking' imagepath={bookingIcon}/></Linker>
+            <Linker path="booking"><FeatureBox feature='Booking' imagepath={bookingIcon}/></Linker>
             <FeatureBox feature="Reviews and Ratings" imagepath={reviewIcon}/>
             <Linker path='notifications'><FeatureBox feature="Notifications" imagepath={notificationIcon}/></Linker>
             <FeatureBox feature="Settings" imagepath={settingIcon}/>

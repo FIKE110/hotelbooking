@@ -3,6 +3,7 @@
     align-content: center;
     justify-content: center;
     margin-top: 9px;
+    margin-bottom: 22px;
 }
 
 #search-container input{
@@ -19,7 +20,24 @@
     height: auto;
 }
 
+
 #search-container #search-button{
     padding: 3px 5px;
     background-color:  #5D71C7;
+}
+
+.search-component{
+    display: flex;
+    padding: 40px;
+    gap: 50px;
+}
+
+.search-component img{
+    width: 250px;
+    height:auto
+}
+
+.search-component p{
+    margin: 0%;
+    padding: 5px;
 }

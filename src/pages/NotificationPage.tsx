@@ -1,7 +1,9 @@
 import React from 'react'
 import NotificationBox from '../comonents/NotificationBox'
 import '../styles/notification.css'
+import notificationTest from '../test/notificationTest'
 import ProfileHeading from '../comonents/ProfileHeading'
+import ModalComponent from '../comonents/ModalComponent'
 
 const NotificationPage = () => {
   return (
@@ -16,9 +18,8 @@ const NotificationPage = () => {
         </div>
         <div style={{padding:30}}>
         <h2 className='poppins-bold'>Notifications </h2>
-        <NotificationBox message='Your hotels has been booked'/>
-        <NotificationBox message='Ur booking has expired'/>
-        <NotificationBox message='You have contacted customer serivce'/>
+        {notificationTest.map((item,index)=>( <NotificationBox data={item} key={index} />))}
+        <ModalComponent></ModalComponent>
         </div>
         
     </div>

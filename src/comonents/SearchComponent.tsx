@@ -1,17 +1,20 @@
-import React from 'react'
-import HoteImage from "../assets/pexels-vecislavas-popa-1743231.jpg"
 import '../styles/default.css'
 import { Rating } from '@mui/material'
+import HotelData from '../types'
 
-const SearchComponent = () => {
+const SearchComponent = ({data}:{data:HotelData}) => {
+    const {hotel_image,hotel_name,address,city,price_per_night,rating} = data
   return (
-    <div>
-        <div>
-            <img src={HoteImage} />
+    <div className='search-component'>
+        <div className='image-container'>
+            <img src={hotel_image} />
         </div>
-        <div>
-            <p className='poppins-bold'>Oceanic hotel</p>
-            <Rating name='hotelhalf' defaultValue={2.5} precision={0.5} readOnly/>
+        <div className='desc-container' style={{paddingTop:8}}>
+            <p className='poppins-bold'>{hotel_name}</p>
+            <p className='poppins-medium'>{address}</p>
+            <p className='poppins-medium'>{city}</p>
+            <p className='poppins-medium'>{price_per_night}</p>
+            <Rating name='hotelhalf' defaultValue={rating} precision={0.5} readOnly/>
         </div>
     </div>
   )

@@ -1,0 +1,16 @@
+#list-hotel-booking{
+}
+
+#hotel-booking-container img{
+    width:220px;
+    height: auto
+}
+
+#hotel-booking-container{
+}
+
+#hotel-booking-container p{
+    margin: 0px;
+    padding: 8px;
+    color:black;   
+}

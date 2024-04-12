@@ -24,7 +24,9 @@ const SearchPage = () => {
             </div>
         </div>
         <div>
-          <SearchComponent />
+          {hotelTest.map((item,index)=>(
+            <SearchComponent data={item} key={index}/>
+          ))}
         </div>
     </div>
   )

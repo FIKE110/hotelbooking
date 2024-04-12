@@ -10,6 +10,8 @@ import SearchPage from './pages/SearchPage'
 import HotelBooking from './pages/HotelBooking'
 import NotificationPage from './pages/NotificationPage'
 import CustomerCarePage from './pages/CustomerCarePage'
+import HotelBookingItems from './comonents/HotelBookingItems'
+import ListHotelBooking from './pages/ListHotelBooking'
 
 function App() {
   return (
@@ -19,7 +21,8 @@ function App() {
       <Route path='/signup' Component={SignupPage} />
       <Route path="/dashboard" Component={AccountMainPage} />
       <Route path="/dashboard/search" Component={SearchPage} />
-      <Route path="/booking" Component={HotelBooking} />
+      <Route path="/dashboard/booking" Component={ListHotelBooking} />
+      <Route path="/booking/:id" Component={HotelBooking} />
       <Route path="/dashboard/notifications" Component={NotificationPage} />
       <Route path="/customercare" Component={CustomerCarePage} />
    </Routes>
